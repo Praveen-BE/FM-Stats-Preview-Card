@@ -25,8 +25,10 @@ Users should be able to:
 ### Screenshot
 
 - Mobile
+  
   ![](./solvedScreenshot/Screenshot%202025-04-06%20at%2021-39-26%20Frontend%20Mentor%20Stats%20preview%20card%20component.png)
 - Desktop
+  
   ![](./solvedScreenshot/Screenshot%202025-04-06%20at%2021-39-50%20Frontend%20Mentor%20Stats%20preview%20card%20component.png)
 
 ### Links
