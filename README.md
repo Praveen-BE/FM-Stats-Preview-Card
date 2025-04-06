@@ -11,8 +11,6 @@ This is a solution to the [Stats preview card component challenge on Frontend Me
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
@@ -27,8 +25,10 @@ Users should be able to:
 ### Screenshot
 
 - Mobile
+  
   ![](./solvedScreenshot/Screenshot%202025-04-06%20at%2021-39-26%20Frontend%20Mentor%20Stats%20preview%20card%20component.png)
 - Desktop
+  
   ![](./solvedScreenshot/Screenshot%202025-04-06%20at%2021-39-50%20Frontend%20Mentor%20Stats%20preview%20card%20component.png)
 
 ### Links
@@ -86,7 +86,7 @@ i refer from [oryanhach](https://www.frontendmentor.io/profile/oryanhach) fronte
 
 <!-- - Website - [Add your name here](https://www.your-site.com) -->
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/Praveen-BE)
+- Frontend Mentor - [Praveen-BE](https://www.frontendmentor.io/profile/Praveen-BE)
 <!-- - Twitter - [@yourusername](https://www.twitter.com/yourusername) -->
 
 ## Acknowledgments
