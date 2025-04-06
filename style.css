@@ -1,0 +1,235 @@
+/******** root variables start ********/
+
+:root {
+  --clr-primary-800: hsl(233, 47%, 7%);
+  --clr-primary-600: hsl(244, 38%, 16%);
+  --clr-primary-200: hsl(277, 64%, 61%);
+
+  --clr-neutral-10: hsl(0, 0%, 100%);
+  --clr-neutral-50: hsla(0, 0%, 100%, 0.75);
+  --clr-neutral-100: hsla(0, 0%, 100%, 0.6);
+
+  --fs-normal: 15px;
+
+  --fw-normal: 400;
+  --fw-bold: 700;
+
+  --ff-base: "Inter", sans-serif;
+  --ff-accent: "Lexend Deca", sans-serif;
+}
+
+/******** root variables End ********/
+
+/******** Josh W Comeau reset starts ******/
+/* 1. Use a more-intuitive box-sizing model */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+* {
+  margin: 0;
+}
+
+/* 3. Enable keyword animations */
+/* @media (prefers-reduced-motion: no-preference) {
+      html {
+        interpolate-size: allow-keywords;
+      }
+    } */
+
+body {
+  /* 4. Add accessible line-height */
+  line-height: 1.5;
+  /* 5. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 6. Improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 7. Inherit fonts for form controls */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* 8. Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* 9. Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+/*
+      10. Create a root stacking context
+    */
+/* #root, #__next {
+      isolation: isolate;
+    } */
+
+/******** Josh W Comeau reset starts ******/
+
+/****** Body Style Start *****/
+body {
+  background-color: var(--clr-primary-800);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 1.5rem;
+  color: var(--clr-neutral-100);
+  font-family: var(--ff-base);
+  font-size: var(--fs-normal);
+  font-weight: var(--fw-normal);
+  flex-direction: column;
+}
+
+/****** Body Style End *****/
+
+/***** stats card Mobile Starts ******/
+
+.stats {
+  background-color: var(--clr-primary-600);
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+.stats__img {
+  position: relative;
+  margin: 0;
+  inline-size: 100%;
+}
+.stats__img:before {
+  content: " ";
+  position: absolute;
+  inset: 0;
+  z-index: 10px;
+  background-color: var(--clr-primary-200);
+  opacity: 0.5;
+}
+
+.stats__content {
+  display: grid;
+  padding: 2rem;
+  padding-top: 2.5rem;
+  gap: 2.3rem;
+}
+
+.stats__content__summary {
+  display: grid;
+  gap: 1rem;
+}
+
+.stats__content__summary h1 {
+  font-size: calc(var(--fs-normal) * 2);
+  line-height: 2rem;
+}
+
+.stats__content__summary h1 span {
+  color: var(--clr-primary-200);
+}
+
+.stats__content__summary p {
+  line-height: 1.5rem;
+}
+
+h1 {
+  color: var(--clr-neutral-10);
+  font-size: calc(var(--fs-normal) * 1.6);
+}
+
+.stats__content__data {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.stats__content__data__preview p {
+  text-transform: uppercase;
+  font-size: calc(var(--fs-normal) * 0.83);
+  font-family: var(--ff-accent);
+}
+
+/***** stats card Mobile End ******/
+
+/***** stats card Media Quiries starts ******/
+
+@media (min-width: 601px) {
+  .stats__img {
+    inline-size: 100%;
+  }
+  .stats__img img {
+    width: 100%;
+    overflow: hidden;
+  }
+  .stats__content {
+    width: 100%;
+    padding: 3rem;
+    text-align: left;
+  }
+  .stats__content__data {
+    padding-right: 1rem;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .stats__content__summary h1 {
+    font-size: calc(var(--fs-normal) * 2.6);
+    line-height: 2.5rem;
+  }
+  .stats__content__summary p {
+    padding-right: 5rem;
+  }
+}
+
+@media (min-width: 759px) {
+  .stats {
+    display: flex;
+    flex-direction: row-reverse;
+    max-width: 1110px;
+    justify-content: space-around;
+  }
+  .stats__img img {
+    width: auto;
+    height: 100%;
+    overflow: hidden;
+  }
+}
+
+@media (min-width: 1000px) {
+  .stats__content {
+    padding: 4rem;
+  }
+  .stats__content__data {
+    padding-right: 3rem;
+  }
+}
+
+/***** stats card Media Quiries End ******/
