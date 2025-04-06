@@ -69,6 +69,19 @@ Users should be able to:
 }
 ```
 
+in Mobile view, title has First line has three words, my design has two words, normal padding did not solve this issue. I try word-wrap also, but it does not solve the problem. Anyway desktop view is ok.
+
+i refer from [oryanhach](https://www.frontendmentor.io/profile/oryanhach) frontend mentor [website](https://oryanhach.github.io/stats-preview-card-component/)
+
+```css
+.stats__content__summary h1 {
+  font-size: calc(var(--fs-normal) * 2);
+  line-height: 2rem;
+  text-wrap: wrap;
+  overflow-wrap: break-word;
+}
+```
+
 ## Author
 
 <!-- - Website - [Add your name here](https://www.your-site.com) -->

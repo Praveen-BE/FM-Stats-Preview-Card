@@ -153,6 +153,8 @@ body {
 .stats__content__summary h1 {
   font-size: calc(var(--fs-normal) * 2);
   line-height: 2rem;
+  text-wrap: wrap;
+  overflow-wrap: break-word;
 }
 
 .stats__content__summary h1 span {
